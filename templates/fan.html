@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <br>
+    <br>
+    <form method="get">
+        <input name="nomi" type="text" placeholder="Nom">
+        <button>Qidirish</button>
+    <br>
+    <br>
+    <h1>Hamma fanlar</h1>
+    {% for f in fanlar%}
+        <h2>{{f.id}}.{{fan.nom}}</h2>
+        {% endfor %}
+    <br>
+    <br>
+     <form method="post" >{% csrf_token %}
+        {{ forma }}
+    </form>
+</body>
+</html>
